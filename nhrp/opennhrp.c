@@ -150,7 +150,7 @@ static int load_config(const char *config_file)
 	struct nhrp_interface *iface = NULL;
 	struct nhrp_peer *peer = NULL;
 	struct nhrp_address paddr;
-	char word[32], nbma[32], addr[32];
+	char word[32], nbma[32], addr[64];
 	FILE *in;
 	int lineno = 1, rc = -1;
 
